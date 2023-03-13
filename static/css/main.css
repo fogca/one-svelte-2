@@ -1,0 +1,127 @@
+h1.uppercase {margin-left: -2px;}
+
+.Career {background-color: var(--darkGray);}
+.Career header {background: var(--darkGray) !important;}
+.Career header * {
+    color: var(--backgroundColor);
+    fill: var(--backgroundColor);
+}
+.Career .O {fill: var(--backgroundColor);}
+.Career footer {
+    margin-top: -12.5rem !important;
+    background-color: var(--darkGray) !important;
+    background-color: transparent !important;
+}
+.Career footer * {
+    color: var(--backgroundColor);
+    fill: var(--backgroundColor);
+}
+
+.Contact footer {margin-top: -25rem !important;}
+
+.Archives footer {margin-top: -7.5rem !important;}
+
+
+
+footer .O {
+    position: absolute;
+    left: calc(100% - 45vh);
+    bottom: -57.5vh;
+}
+#i1 .O {
+    position: absolute;
+    top: -25vh;
+    left: 57.5vw;
+    height: 105vh;
+    transform: translate(-50%,-50%);
+}
+
+.Studio .O, .page .O {
+    top: -15.5vh;
+    left: 65vw;
+    height: 105vh;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+#Contact footer .O {display: none;}
+#c1 .O {
+    position: absolute;
+    top: -17.5vh;
+    left: 65vw;
+    height: 105vh;
+    transform: translate(-50%,-50%);
+}
+
+.Career .page#Career .O {
+    top: -45vh;
+    left: 57.5vw;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width: 480px) {
+    
+    h1.uppercase {margin-left: -1.2px;}
+
+    .Index footer {margin-top: 0 !important;}
+    .Archives footer {margin-top: 0rem !important;}
+
+    footer .O {
+        height: 85vh;
+        left: calc(100% - 32.5vh);
+        bottom: -47.5vh;
+    }
+
+    #i1 .O {
+    top: -18.5vh;
+    left: 52vw;
+    height: 40vh;
+    }
+
+    .Studio .O, .page .O {
+        height: 60vh !important;
+        top: -30vh;
+        left: 50vw;
+    }
+}
+
+header.is-top {
+    padding-top: 6rem !important;
+    background: transparent !important;
+}
+
+header .hamburger {display: none !important;}
+
+@media screen and (max-width: 480px) {    
+    header.is-top {padding-top: 4.5rem !important;}
+    header .hamburger {display: block !important;}
+
+    header .menu-button {padding-top: .3rem;}
+    header .logo {padding-top: .75rem;}
+    
+    
+    header button.hamburger span::after {
+        display: block;
+        content: 'MENU';
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        font-family: 'Quiche Sans';
+        font-weight: 500;
+        margin-left: -1.5rem;
+        position: relative;
+        z-index: 999;
+    }
+    header button.hamburger span,
+    header button.hamburger span::before,
+    header button.hamburger span::after {background-color: transparent !important;}
+    header .logo svg {width: 6rem;}
+
+    .Archvieswitch {
+        margin-top: 4rem;
+        margin-bottom: 1.5rem;
+    }
+    .Archvieswitch a {    
+        font-size: 1.8rem;
+        margin-right: 1rem;
+    }
+}
