@@ -203,14 +203,15 @@
   #i1 h1.uppercase {text-transform: initial;}
   #i1 .wrapper {width: 95%;}
 
-  #i1 .wrapper .p {
+  #i1 .wrapper h2 {
     font-size: 1.4rem;
     margin: 1.5rem 0 .5rem;
   }
 
-  #i1 .wrapper h3 {
-    line-height: 1.6;
-    margin-bottom: 6rem;
+  #i1 .wrapper h3.p {
+    font-size: 1.35rem;
+    line-height: 1.8;
+    margin: 1rem 0 0.5rem;
 }
 #i1 h5 {
     margin-top: 0.5rem;

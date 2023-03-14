@@ -22,7 +22,7 @@
 		
 		<h1 class="h2">{data[0].title}</h1>
 		<h2 class="h5 semitrans">{ data[0].scope }</h2>
-		<p class="h2 body">{@html data[0].body}</p>
+		<p class="h5 body">{@html data[0].body}</p>
 		<img src={data[0].thumbnail.url} class="thumbnail" alt="{data[0].title}">
 		<div class="images">{@html data[0].images}</div>
 		
@@ -43,7 +43,7 @@
 		<h6 class="h4 credit">{@html data[0].credit}</h6>
 		
 		{#if data[0].link} 
-		<a href="{data[0].link}" target="_blank" class="h5 link">公式サイト</a>​
+		<a href="{data[0].link}" target="_blank" class="h5 link" lang="en">Official Site</a>​
 		{/if}
 
 	</section>
@@ -108,10 +108,10 @@
 }
 
 #s1 h1 {
-    font-size: 3.9rem;
-    margin: calc(var(--pX) * 0) 0 calc(var(--pX) * 1);
+    font-size: 2.8rem;
+    margin: 0 0 .5rem;
 }
-#s1 h2 {margin: calc(var(--pX) * 0) 0 calc(var(--pX) * 7.5);}
+#s1 h2 {margin: 0 0 1.5rem;}
 
 
 	
@@ -159,18 +159,22 @@
 @media screen and (max-width: 480px) {
     #s1 {
         width: 100%;
-        padding-top: calc(var(--pX) * 16);
-        padding-right: 5vw;
+        padding-top: var(--sectionTop);
     }
-    #s1 h1 {font-size: 3rem;margin-top: 0;}
-    #s1 h2 {font-size: 1.8rem;
-        margin-bottom: calc(var(--pX) * 3.5);}
+    #s1 h1 {
+		font-size: 2.15rem;
+		margin-top: 0;
+	}
+    #s1 h2 {
+		width: 90%;
+		margin-bottom: calc(var(--pX) * 3.5);
+	}
     #s1 p {
-        font-size: 1.35rem;
-        line-height: 1.75;
         letter-spacing: -0.15px;
         text-align: justify;
 	}
+
+	#s1 .credit {margin-top: 2.5rem;}
 
     #s2 {    
         margin-top: 12.5rem;

@@ -1,7 +1,6 @@
 #s1 p.body p {
     width: 80%;
     font-size: 1.8rem;
-    line-height: 1.8;
     /*
     -webkit-text-stroke: .0725px;
     */
@@ -9,7 +8,7 @@
 #s1 img.fullImage {
     width: 100vw;
     height: 105vh;
-    margin-left: -10vw;
+    margin-left: calc(-1 * var(--padding));
 }
 #s1 .images p {text-align: center;}
 #s1 .images p img {
@@ -28,27 +27,33 @@
     text-decoration-line: underline;
     margin-top: 4rem;}
 #s1 .credit p {
-    text-transform: capitalize;
+    text-transform: initial;
     font-size: 1.8rem;
-    line-height: 1.7;
+    line-height: 2;
 }
 
 @media screen and (max-width: 480px) {
+
+    
 #s1 p.body p {
     width: 100%;
-    font-size: 1.425rem;
+    font-size: 1.3rem;
 }
 #s1 img {margin-bottom: 5vw;}
 #s1 img.fullImage {
     height: auto;
-    margin-left: -6vw;
+    margin-left: calc(-1 * var(--spPadding));
 }
 #s1 img.thumbnail {
     width: 100vw;
-    margin-left: -6vw;
+    margin-left: calc(-1 * var(--spPadding));
     margin-top: calc(var(--pX) * 5);
-    margin-bottom: 5vw;}
+    margin-bottom: 5vw;
+}
 
 #s1 .images p img {width: 100%;}
-#s1 .credit p {font-size: 1.4rem;}
+#s1 .credit p {
+    font-size: 1.25rem;
+    letter-spacing: -.015em;
+}
 }

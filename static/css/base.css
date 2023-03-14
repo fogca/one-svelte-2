@@ -16,6 +16,9 @@
     --darkGray: #181818;
     --white: #FAFAFA;
     --footer: #D0D0D0;
+    --padding: 7.5vw;
+    --spPadding: 7.5vw;
+    --sectionTop: 22.5vh;
 
     --outer-height: 100vh;
     --pX: 8px;
@@ -45,7 +48,7 @@ div, h1, h2, h3, h4, h5, h6, p, a, span, button {
     font-style: normal;
     color: var(--textColor);
     letter-spacing: .5px;
-    line-height: 1.4;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     font-display: fallback;
 }
@@ -56,7 +59,7 @@ main {
     margin: auto;
     */
 }
-section {padding-left: 10vw;}
+section {padding-left: var(--padding);}
 main section:first-of-type {padding-top: 25vh;}
 .Index section:first-of-type {padding-top: 0;}
 
@@ -116,13 +119,13 @@ img {object-fit: cover;}
 
 
 @media screen and (max-width: 480px) {
-    .h0 {font-size: 4.6rem;}
-h1, .h1 {font-size: 3.2rem;}
-h2, .h2 {font-size: 2.4rem;}
-h3, .h3 {font-size: 2.0rem;}
-h4, .h4 {font-size: 1.8rem;}
-h5, .h5 {font-size: 1.6rem;}
-h6, .h6 {font-size: 1.2rem;}
+    .h0 {font-size: 2.25rem;}
+h1, .h1 {font-size: 2.05rem;}
+h2, .h2 {font-size: 1.85rem;}
+h3, .h3 {font-size: 1.65rem;}
+h4, .h4 {font-size: 1.45rem;}
+h5, .h5 {font-size: 1.25rem;}
+h6, .h6 {font-size: 1.15rem;}
 p {
     font-size: 1.3rem;
     text-align: left;
@@ -131,8 +134,8 @@ p {
 .sp {display: inline-block;}
 
 section {
-    padding-left: 7.5vw;
-    padding-right: 7.5vw;
+    padding-left: var(--spPadding);
+    padding-right: var(--spPadding);
 }
 main section:first-of-type {padding-top: 20vh;}
 .Index section:first-of-type {padding-top: 0;}
