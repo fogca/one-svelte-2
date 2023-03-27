@@ -108,13 +108,13 @@
 
 #i1 h1 {
   line-height: 1.4;
-  font-size: 4rem;
+  font-size: 3.2rem;
   padding-top: 25vh;
 }
 
 #i1 .wrapper {width: 40%;}
 #i1 .wrapper .p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
