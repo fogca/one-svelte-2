@@ -117,7 +117,8 @@ header ul li {
   display: inline-block;}
 header ul li a {
   opacity: .25;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
   margin-right: 4rem;
   transition: 1s;
 }

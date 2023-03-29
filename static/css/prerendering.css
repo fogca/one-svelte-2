@@ -2,6 +2,12 @@
 #i1 .wrapper h2 p {font-size: 1.5rem;}
 #i1 .wrapper h3 p {font-size: 1.3rem;}
 
+#st1 h3 {
+    text-align: justify;
+    line-height: 2.2;
+}
+
+
 .Archvieswitch {
     margin-top: 10rem;
     margin-bottom: 3rem;

@@ -8,6 +8,11 @@
     font-family: 'TTNormsS-R';
     src: url(/fonts/TTNormsProSerif-Normal.woff2) format('woff2'); 
 }
+@font-face {
+    font-family: 'TTNormsSerif';
+    src: url(/fonts/TTNormsProSerifVariableRoman.woff2) format('woff2'); 
+    
+}
 
 :root {
     --backgroundColor: #EBEBEB;
@@ -16,7 +21,7 @@
     --darkGray: #181818;
     --white: #FAFAFA;
     --footer: #D0D0D0;
-    --padding: 7.5vw;
+    --padding: 11.5vw;
     --spPadding: 7.5vw;
     --sectionTop: 22.5vh;
 
@@ -42,9 +47,10 @@ main {
     overflow-x: hidden;}
 
 div, h1, h2, h3, h4, h5, h6, p, a, span, button {
-    font-family: minerva-modern, TsukuAOldMinPr6-R, TsukuAOldMinPro6-L, "fot-tsukumin-pr6n", "Hiragino Mincho ProN", serif;
     font-family: "TTNormsS-R",TsukuGoPr5-M,TsukuGoPro-M, sans-serif;
+    font-family: "TTNormsSerif",TsukuGoPr5-M,TsukuGoPro-M, sans-serif;
     font-weight: 400;
+    font-variation-settings: "wght" 350;
     font-style: normal;
     color: var(--textColor);
     letter-spacing: .5px;
@@ -72,7 +78,7 @@ h4, .h4 {font-size: 2.4rem;}
 h5, .h5 {font-size: 2.0rem;}
 h6, .h6 {font-size: 1.6rem;}
 
-h1, .h1 {font-size: 4.2rem;}
+h1, .h1 {font-size: 2.8rem;}
 h2, .h2 {font-size: 2.4rem;}
 h3, .h3 {font-size: 2.2rem;}
 h4, .h4 {font-size: 2.0rem;}
@@ -80,20 +86,15 @@ h5, .h5 {font-size: 1.8rem;}
 h6, .h6 {font-size: 1.4rem;}
 
 p, .p {
-    font-family: "TTNormsS-R",TsukuGoPr5-M,TsukuGoPro-M, sans-serif;
+    font-family: "TTNormsS-R", TsukuGoPr5-M, TsukuGoPro-M, sans-serif;
     color: var(--bodyColor);
-    line-height: 2;
-    font-size: 1.3rem;
+    line-height: 1.9;
+    font-size: 1.5rem;
     hyphens: auto;
     text-align: left;
     letter-spacing: .005em;
 }
-.uppercase {
-    text-transform: capitalize;
-    font-family: quiche-sans, sans-serif;
-    font-family: "TTNormsS-R", sans-serif;;
-    font-weight: 500;
-}
+.uppercase {text-transform: capitalize;}
 .semitrans {opacity: 0.5;}
 
 li {

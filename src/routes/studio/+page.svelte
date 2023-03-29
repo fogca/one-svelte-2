@@ -2,6 +2,9 @@
   import Saos from "saos";
   import O from '../../components/O.svelte'
 	
+
+  	/** @type {import('./$types').PageData} */
+	export let data;
 </script>
 
 <svelte:head>
@@ -14,19 +17,11 @@
         <h1 class="uppercase">Studio</h1>
         
         <div class="wrapper">
-          <h3 class="p studio-jp">one inc.はグラフィックやデジタルデザインなどのヴィジュアルコミュニケーションを軸に、
-            コーポレートやブランドアイデンティティを構築するクリエイティブ&ブランドデザインスタジオです。
-            物事の常識に囚われることなく、常に新たな視点を持ち、
-            模索することで、今までにない新しく記憶に残る体験をを常に選択します。
-            
-            これまで培ってきた経験を存分に活用することで、ブランドの本質を模索し、最適なビジュアルを構築します。常識に囚われない独創的で革新的な視点は、ビジュアルアイデンティをより揺るぎなく印象的なものへと変貌をとげます。one inc. はヴィジュアルアイデンティティを中心に、様々な領域のデザイン、およびクリエイティブディレクションを行うデザインスタジオです。私たちの仕事は、デザインの力を重視するクライアントとの協力によって、現代の新たな文化を形作っていくことです。
-            
-            私たちにとってビジュアルやグラフィックとは、目に見えるすべてに関係するものであり、一部の人に向けた特別なものではなく、多くの人にとって不可欠なものだと考えています。同様に、知的で文化的であるということも、本来は一部の人の特権ではなく、誰もが生きる上で必要とすることではないでしょうか。デザインを通してクリエイティブな生態系を作っていくこと、そして、知的で文化的な社会の発展に貢献していくこと。こうした理念のもと、私たちはデザインを行なっています。
-            
-            目に見える物だけがデザインではなく、
-            物事の本質や在り方、存在意義から考えることが本来のクリエーションであると信じています。</h3>
-          <h4 class="h5 studio-en" lang="en">
-            one inc. is a Tokyo-based a creative and design consulting studio focusing on brand design with graphic and digital experiences. Our main feature is to bring a new perspective to all projects which eventually leads to novel experiences. We leverage our extensive graphic and digital experience to discover the essence of the brand and create the best style from the best design collectives possible. Our design, which expresses a unique and innovative perspective and the essence of the brand, makes the brand’s visual identity stronger and more iconic and makes it look attractive.Bring a new perspective to all projects from our design collective.
+          <h3 class="p studio-jp">
+            { @html data[0].studio_jap }
+          </h3>
+          <h4 class="p studio-en" lang="en">
+            { data[0].studio_eng }
           </h4>
         </div>
         
@@ -54,14 +49,8 @@
 #st2 {margin-top: calc(var(--pX) * 20);}
 
 #st1 .wrapper {width: 50%;}
-#st1 h3, #st1 .studio-jp p {
-  -webkit-text-stroke: .0725px;
-  font-size: 1.8rem;
-  margin: calc(var(--pX) * 3.5) 0 calc(var(--pX) * 2);
-  text-align: justify;
-  line-height: 1.8;
-}
-#st1 h4 {line-height: 1.575;}
+
+#st1 h4 {line-height: 1.8;}
 
 
 #st2 h1 {margin-bottom: calc(var(--pX) * 10);}
@@ -83,25 +72,16 @@
   #st1 h2 {margin: calc(var(--pX) * .5) 0 calc(var(--pX) * 4);}
   #st1 h2, #st2 h2 {opacity: .5;}
 
-  #st1 .wrapper {width: 95%;}
+  #st1 .wrapper {width: 100%;}
   #st1 .wrapper h3, #st1 .studio-jp p {
-    font-size: 1.5rem;
-    line-height: 1.8;
+    font-size: 1.25rem;
   }
 
-  #st1 .wrapper h4 {margin-top: calc(var(--pX) * 5);}
-
-  
-
-  #st1 p {
-    line-height: 1.8;
-    width: 92.25%;
-    font-size: 1.48rem;}
+  #st1 .wrapper h4 {margin-top: 2rem;}
 
   #st2 {margin-top: calc(var(--pX) * 12.5);}
-  #st2 h1 {margin-bottom: calc(var(--pX) * 5);}
-  #st2 .h6 {font-size: 1.5rem;}
-  #st2 .h4 {font-size: 2rem;}
+  #st2 h1 {margin-bottom: 2rem;}
+  
   #st2 h4 {margin-bottom: calc(var(--pX) * 4.5);}
 }
 </style>
