@@ -100,7 +100,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem 10vw;
+    padding: 1.25rem var(--padding);
     position: fixed;
     top: 0;
     background: var(--backgroundColor);

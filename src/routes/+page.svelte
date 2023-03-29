@@ -17,10 +17,10 @@
 	<section id="i1">
 		<O />
     
-    <h1 class="tagline uppercase">{@html data[1].top_tagline }</h1>
+    <h1 class="tagline">{@html data[1].top_tagline }</h1>
 		<div class="wrapper">
 		  <h2 class="p">{ @html data[1].top_jap }</h2>
-		  <h3 class="h5 p">{ data[1].top_eng }</h3>
+		  <h3 class="h5 p">{ @html data[1].top_eng }</h3>
 		</div>
 
     <div class="links">
@@ -110,6 +110,7 @@
   line-height: 1.4;
   font-size: 3.2rem;
   padding-top: 25vh;
+  margin-left: -2.2px;
 }
 
 #i1 .wrapper {width: 40%;}
@@ -206,6 +207,10 @@
   #i1 .wrapper h2 {
     font-size: 1.4rem;
     margin: 1.5rem 0 .5rem;
+  }
+
+  #i1 .wrapper .p {
+    font-size: 1.35rem;
   }
 
   #i1 .wrapper h3.p {
