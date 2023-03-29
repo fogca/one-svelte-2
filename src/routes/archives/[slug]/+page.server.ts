@@ -15,9 +15,11 @@ type Post = {
 	work: string;
 	client: string;
 	link: string;
+	repeatImg: HTMLElement;
+	images: {url: string;}
+	image: {url: string;}
 	body: HTMLElement;
 	html: HTMLElement;
-	images: HTMLElement;
 	imagesB: HTMLElement;
 	embed: HTMLElement;
 };

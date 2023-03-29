@@ -24,7 +24,22 @@
 		<h2 class="h5 semitrans">{ data[0].scope }</h2>
 		<p class="h5 body">{@html data[0].body}</p>
 		<img src={data[0].thumbnail.url} class="thumbnail" alt="{data[0].title}">
-		<div class="images">{@html data[0].images}</div>
+		
+		
+		{#if data[0].repeatImg}
+		{#each data[0].repeatImg as repeat}
+        <picture>
+            <source srcset="{`${repeat.images.url}?fm=avif&q=60&width=580`} 1x, {`${repeat.images.url}?fm=avif&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/avif">
+            <source srcset="{`${repeat.images.url}?fm=avif&q=60&width=580`} 1x, {`${repeat.images.url}?fm=avif&q=75&width=1440`} 2x," media="(min-width: 600px)" type="image/avif">
+            <source srcset="{`${repeat.images.url}?fm=webp&q=60&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/webp">
+            <source srcset="{`${repeat.images.url}?fm=webp&q=60&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=75&width=1440`} 2x," media="(min-width: 600px)" type="image/webp">
+            <img data-src={repeat.images.url} alt="{data[0].title}">
+        </picture>
+		{/each}
+        {/if}
+
+
+		<div class="images">{@html data[0].image}</div>
 		
 		{#if data[0].fullImage} 
 		<img src={data[0].fullImage.url} class="fullImage" alt="{data[0].title}">
