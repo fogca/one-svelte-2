@@ -33,7 +33,7 @@
             <source srcset="{`${repeat.images.url}?fm=avif&q=60&width=580`} 1x, {`${repeat.images.url}?fm=avif&q=75&width=1440`} 2x," media="(min-width: 600px)" type="image/avif">
             <source srcset="{`${repeat.images.url}?fm=webp&q=60&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/webp">
             <source srcset="{`${repeat.images.url}?fm=webp&q=60&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=75&width=1440`} 2x," media="(min-width: 600px)" type="image/webp">
-            <img data-src={repeat.images.url} alt="{data[0].title}">
+            <img src={repeat.images.url} alt="{data[0].title}" class="repeat">
         </picture>
 		{/each}
         {/if}
@@ -115,6 +115,8 @@
 </article>
 
 <style>
+
+	.repeat {width: 60%;}
 
 #s1 {
     width: 90%;
