@@ -17,7 +17,7 @@
     <h1 class="uppercase">Archives</h1>
     <div class="Archvieswitch">
       <a href="/archives">Gallery</a>
-      <a href="/archives/texts" style="opacity:1;">Texts</a>
+      <a href="/archives/texts" style="opacity:1;">List</a>
     </div>
     <div class="wrapper">
 

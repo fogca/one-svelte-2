@@ -50,6 +50,7 @@
 
 #st1 .wrapper {width: 50%;}
 
+#st1 h3 {margin-bottom: 2rem;}
 #st1 h4 {line-height: 1.8;}
 
 

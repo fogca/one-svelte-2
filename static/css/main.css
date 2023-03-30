@@ -30,7 +30,8 @@ footer .O {
 }
 #i1 .O {
     position: absolute;
-    top: -25vh;
+    top: 0;
+    margin-top: -25vh;
     left: 57.5vw;
     height: 105vh;
     transform: translate(-50%,-50%);

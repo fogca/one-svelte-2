@@ -27,7 +27,7 @@
     <h1 class="uppercase">Archives</h1>
     <div class="Archvieswitch">
       <a href="/archives" style="opacity:1;" class="h2">Gallery</a>
-      <a href="/archives/texts" class="h2">Texts</a>
+      <a href="/archives/texts" class="h2">List</a>
     </div>
     
                                  
@@ -106,7 +106,7 @@
 <style>
 #ar1 {
   padding: calc(var(--pX) * 30) 0 15vh;
-  width: 80%;
+  width: calc(100vw - var(--padding)*2);
   margin-left: auto;
   margin-right: auto;
 }
@@ -159,6 +159,7 @@
     padding: calc(var(--pX) * 30) 0 15vh;
     width: 100%;
   }
+  #ar1 h1 {font-size: 2.4rem;}
 }
 
 

@@ -9,7 +9,7 @@
 
 
 .Archvieswitch {
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
     display: flex;
 }
@@ -21,10 +21,10 @@
 
 @media screen and (max-width: 480px) {
 
-    .Archvieswitch {margin-top: 5rem;}
+    .Archvieswitch {margin-top: 2rem;}
 
     .Archvieswitch a {
-        font-size: 1.9rem;
-        margin-right: 2rem;
+        font-size: 1.4rem;
+        margin-right: 1.5rem;
     }
 }

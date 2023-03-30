@@ -17,11 +17,13 @@
 	<section id="i1">
 		<O />
     
-    <h1 class="tagline">{@html data[1].top_tagline }</h1>
-		<div class="wrapper">
-		  <h2 class="p">{ @html data[1].top_jap }</h2>
-		  <h3 class="h5 p">{ @html data[1].top_eng }</h3>
-		</div>
+    <div class="top">
+      <h1 class="tagline">{@html data[1].top_tagline }</h1>
+		  <div class="wrapper">
+		    <h2 class="p">{ @html data[1].top_jap }</h2>
+		    <h3 class="h5 p">{ @html data[1].top_eng }</h3>
+		  </div>
+    </div>
 
     <div class="links">
       <a href="/studio">
@@ -96,20 +98,20 @@
   width: 100%;
   min-height: 100vh;
   padding-left: -10vw;
-  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #i1 .links {
-  position: absolute;
-  top: auto;
-  bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
-
+#i1 .top {margin-top: 25vh;}
 #i1 h1 {
   line-height: 1.4;
   font-size: 3.2rem;
-  padding-top: 25vh;
   margin-left: -2.2px;
 }
 
