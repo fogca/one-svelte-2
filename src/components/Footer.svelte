@@ -34,7 +34,7 @@ footer {
     margin-top: calc(var(--pX) * 15);
     padding-top: calc(var(--pX) * 15);
     padding-bottom: calc(var(--pX) * 5);
-    padding-left: 10vw;
+    padding-left: var(--padding);
 
     width: 100%;
     background-color: var(--footer);

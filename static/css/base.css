@@ -21,7 +21,7 @@
     --darkGray: #181818;
     --white: #FAFAFA;
     --footer: #D0D0D0;
-    --padding: 11.5vw;
+    --padding: 8vw;
     --spPadding: 7.5vw;
     --sectionTop: 22.5vh;
 
@@ -90,7 +90,6 @@ p, .p {
     color: var(--bodyColor);
     line-height: 1.9;
     font-size: 1.5rem;
-    hyphens: auto;
     text-align: left;
     letter-spacing: .005em;
 }

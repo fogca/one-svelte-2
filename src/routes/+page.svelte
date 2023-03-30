@@ -114,16 +114,21 @@
 }
 
 #i1 .wrapper {width: 40%;}
-#i1 .wrapper .p {
+
+#i1 .wrapper h2.p {
+  width: 100%;
+  text-align: justify;
   font-size: 1.6rem;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
 #i1 a {display: block;}  
 
-#i1 .wrapper h3 {
+#i1 .wrapper h3.p {
   line-height: 1.6;
-  margin-bottom: 8rem;}
+  margin-bottom: 8rem;
+  text-align: left;
+}
 #i1 h5 {
   margin-top: .5rem;
   margin-bottom: 4rem;}
@@ -131,7 +136,7 @@
 
 #i2 {
   padding-top: calc(var(--pX) * 15);
-  padding-right: 10vw;
+  padding-right: var(--padding);
 }
 #i2 h3 {margin-top: calc(var(--pX) * 1);}
 #i2 .wrapper {margin-top: calc(var(--pX) * 7.5);}
@@ -154,12 +159,15 @@
 }
 #i2 .wrapper a:hover img {filter: saturate(0.75) brightness(0.875) contrast(1.05);}
 #i2 .wrapper a:nth-of-type(1) {
-  width: 90vw;
+  width: calc(100vw - var(--padding));
   margin-top: 0;
-  margin-right: -10vw;
+  margin-right: calc(-1 * var(--padding));
 }
 
-#i2 .wrapper a:nth-of-type(1) img {width: 90vw;aspect-ratio: 2/1;}
+#i2 .wrapper a:nth-of-type(1) img {
+  width: calc(100vw - var(--padding));
+  height: 40vw;
+}
 
 #i2 .wrapper a:nth-of-type(3),
 #i2 .wrapper a:nth-of-type(4),
@@ -204,16 +212,15 @@
   #i1 h1.uppercase {text-transform: initial;}
   #i1 .wrapper {width: 95%;}
 
-  #i1 .wrapper h2 {
-    font-size: 1.4rem;
+  #i1 .wrapper h2.p {
+    width: 98%;
+    font-size: 1.3rem;
     margin: 1.5rem 0 .5rem;
   }
 
-  #i1 .wrapper .p {
-    font-size: 1.35rem;
-  }
 
   #i1 .wrapper h3.p {
+    width: 95%;
     font-size: 1.35rem;
     line-height: 1.8;
     margin: 1rem 0 0.5rem;
