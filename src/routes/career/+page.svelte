@@ -63,7 +63,6 @@
   padding-bottom: 16rem;
   background-color: var(--darkGray);}
 #Career * {color: #FFF;}
-#career1 {padding-top: calc(var(--pX) * 30);}
 
 #career1 .wrapper,
 #career2 .wrapper {width: 50%;}

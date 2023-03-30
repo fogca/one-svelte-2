@@ -16,6 +16,7 @@ type Post = {
 	client: string;
 	link: string;
 	repeatImg: HTMLElement;
+	repeatImg2: HTMLElement;
 	images: {url: string;}
 	image: {url: string;}
 	body: HTMLElement;

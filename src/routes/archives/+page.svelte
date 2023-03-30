@@ -105,10 +105,9 @@
 
 <style>
 #ar1 {
-  padding: calc(var(--pX) * 30) 0 15vh;
-  width: calc(100vw - var(--padding)*2);
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 15vh;
+  width: calc(100vw - var(--padding)*1);
+  margin-left: 0;
 }
 
 .masonry {

@@ -29,7 +29,6 @@
   
   
   #c1 {
-    padding-top: calc(var(--pX) * 30);
     height: 100vh;
     overflow: hidden;
     position: relative;

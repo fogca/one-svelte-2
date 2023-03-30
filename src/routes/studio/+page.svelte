@@ -45,7 +45,6 @@
 <style>
 
 
-#st1 {padding-top: calc(var(--pX) * 30);}
 #st2 {margin-top: calc(var(--pX) * 20);}
 
 #st1 .wrapper {width: 50%;}

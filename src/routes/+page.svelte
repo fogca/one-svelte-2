@@ -49,14 +49,14 @@
 		{#if data[0].contents}
 		<div class="wrapper">
 			
-			{#each data[0].contents as content}                                 
+			{#each data[0].contents as content}                   
+      <Saos animation={"scroll-animation 1.5s .45s cubic-bezier(0.3, 0, 0.7, 1) both"} once={true}>
 		  	<a href="/archives/{content.id}/" class="container">
-          <Saos animation={"scroll-animation 1.5s .45s cubic-bezier(0.3, 0, 0.7, 1) both"} once={true}>
 				  <img src={content.thumbnail.url} alt="{content.title}"><!--<img src="`${content.thumbnail.url}?fm=webp`" alt="{content.title}">-->
 				  <h2 class="h4">{ content.title }</h2>
 				  <h4 class="h6">{ content.scope }</h4>
-          </Saos>
 		  	</a>
+      </Saos>              
 			{/each}
 		</div>
 		{/if}

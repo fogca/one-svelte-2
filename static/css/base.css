@@ -65,8 +65,19 @@ main {
     margin: auto;
     */
 }
+
+
+
+.Index section:first-of-type,
+.Studio section:first-of-type,
+.Contact section:first-of-type,
+.Archives section:first-of-type,
+.Career section:first-of-type {padding-top: 25vh;}
+
+
+
 section {padding-left: var(--padding);}
-main section:first-of-type {padding-top: 25vh;}
+
 .Index section:first-of-type {padding-top: 0;}
 
 
@@ -86,7 +97,7 @@ h5, .h5 {font-size: 1.8rem;}
 h6, .h6 {font-size: 1.4rem;}
 
 p, .p {
-    font-family: "TTNormsS-R", TsukuGoPr5-M, TsukuGoPro-M, sans-serif;
+    font-family: "TTNormsSerif", TsukuGoPr5-M, TsukuGoPro-M, sans-serif;
     color: var(--bodyColor);
     line-height: 1.9;
     font-size: 1.5rem;

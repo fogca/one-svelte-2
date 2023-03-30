@@ -38,12 +38,23 @@
 		{/each}
         {/if}
 
-
 		<div class="images">{@html data[0].image}</div>
 		
 		{#if data[0].fullImage} 
 		<img src={data[0].fullImage.url} class="fullImage" alt="{data[0].title}">
 		{/if}
+
+		{#if data[0].repeatImg2}
+		{#each data[0].repeatImg2 as repeat}
+        <picture>
+            <source srcset="{`${repeat.images.url}?fm=avif&q=60&width=580`} 1x, {`${repeat.images.url}?fm=avif&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/avif">
+            <source srcset="{`${repeat.images.url}?fm=avif&q=60&width=580`} 1x, {`${repeat.images.url}?fm=avif&q=75&width=1440`} 2x," media="(min-width: 600px)" type="image/avif">
+            <source srcset="{`${repeat.images.url}?fm=webp&q=60&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/webp">
+            <source srcset="{`${repeat.images.url}?fm=webp&q=60&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=75&width=1440`} 2x," media="(min-width: 600px)" type="image/webp">
+            <img src={repeat.images.url} alt="{data[0].title}" class="repeat">
+        </picture>
+		{/each}
+        {/if}
 		
 		<div class="images">{@html data[0].imagesB}</div>
 		
