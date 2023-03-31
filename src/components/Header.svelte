@@ -126,8 +126,8 @@ header ul li a {
 
 @media screen and (max-width: 480px) {
   header {
-    height: 5.5rem;
-    padding: 0 6vw;
+    height: 4.5rem;
+    padding: 0 var(--padding);
     transition: .5s ease-in-out;
   }
 

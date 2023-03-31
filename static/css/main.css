@@ -94,9 +94,10 @@ footer .O {
     }
 
     #i1 .O {
-    top: -18.5vh;
+    top: -25vh;
     left: 52vw;
-    height: 40vh;
+    margin-top: 0;
+    height: 45vh;
     }
 
     .Studio .O, .page .O {

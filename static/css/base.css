@@ -165,3 +165,5 @@ main section:first-of-type {padding-top: 20vh;}
 
 
 }
+
+@media screen and (max-height: 670px) {html {font-size: 58.5%;}}

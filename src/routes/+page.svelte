@@ -74,8 +74,7 @@
 		  </a>
   
 		  <a href="/contact">
-			<h4 class="uppercase" lang="en">Contact 
-			  <span><Arrow /></span>
+			<h4 class="uppercase" lang="en">Contact <span><Arrow /></span>
 			</h4>
 			
 			<h5 class="h6">お問い合わせ</h5>
@@ -205,6 +204,7 @@
     height: 100vh;
     height: 100dvh;
   }
+  #i1 .top {margin-top: 22.5vh;}
   #i1 h1 {
     font-size: 2.8rem;
     font-size: 2.4rem;
@@ -242,18 +242,18 @@
     justify-content: flex-end;
   }
   #i2 .wrapper a:nth-of-type(1) {
-    width: 94vw;
+    width: calc(100vw - var(--padding));
     margin-right: 0;
     overflow: visible;
   }
   #i2 .wrapper a:nth-of-type(1) img {
     width: 100vw;
-    aspect-ratio: 3/2;
-    margin-left: -6vw;
+    height: 66.6vw;
+    margin-left: calc(-1 * var(--padding));
   }
 #i2 .wrapper a {
     margin-top: 6.5rem;
-    width: 94vw;
+    width: calc(100vw - var(--padding));
     margin-left: 0;
 }
 #i2 .wrapper a:nth-of-type(3), #i2 .wrapper a:nth-of-type(4), #i2 .wrapper a:nth-of-type(7) {width: 94vw;}
@@ -261,8 +261,16 @@
 #i2 .wrapper a:nth-of-type(6) img {aspect-ratio: 5/6;}
 
 #i2 .wrapper a img {max-height: 65vh;}
-#i2 .wrapper a h2 {font-size: 1.8rem;
-margin-top: calc(var(--pX) * 1.5);}
+#i2 .wrapper a h2 {
+  font-size: 1.6rem;
+  margin-top: calc(var(--pX) * 1.5);
+}
+
+#i2 .wrapper h3 {
+  font-size: 1.05rem;
+  opacity: .5;
+  width: 90%;
+}
 
 #i2 .wrapper a h4 {
   font-size: 1.6rem;
@@ -280,17 +288,24 @@ margin-top: calc(var(--pX) * 1.5);}
     margin-right: 0;
     margin-bottom: calc(var(--pX) * 5);}
 }
-
+#i3 .wrapper p.h5 {font-size: 1.3rem;}
 #i3 .container a {display: block;}
 #i3 .container svg path {fill: white;}
 
-@media screen and (min-width: 1800px) {
-  #i1 .O {
-  top: -20vh;
-  left: 67.5vw;
-  height: 105vh;
-  transform: translate(-50%,-50%);
-}
+
+
+
+
+
+@media screen and (max-height: 670px) {
+
+  html {font-size: 57.5%;}
+
+  #i1 .top {    margin-top: 20vh;}
+
+
+
+
 }
 	
 </style>

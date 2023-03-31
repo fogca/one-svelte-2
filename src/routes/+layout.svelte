@@ -12,9 +12,9 @@
 </script>
 
 <svelte:head>
-  <link rel="stylesheet" href="../css/base.css?var=1.12">
-  <link rel="stylesheet" href="../css/main.css?var=1.11">
-  <link rel="stylesheet" href="../css/prerendering.css?var=1.11">
+  <link rel="stylesheet" href="../css/base.css?var=1.13">
+  <link rel="stylesheet" href="../css/main.css?var=1.13">
+  <link rel="stylesheet" href="../css/prerendering.css?var=1.13">
   <link rel="stylesheet" href="https://use.typekit.net/frp6udl.css">
   <script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?kqbwQX--jVA%3D&box=Bgw26CBfLFk%3D&aa=1&ab=2"></script>
   <script src="https://unpkg.com/colcade@0/colcade.js"></script>
