@@ -21,10 +21,13 @@ import { expoInOut, expoOut, quadInOut, sineInOut } from 'svelte/easing';
             out:fly={{ duration: 800, easing: quadInOut }}>
             <a href="/contact"><h1 class="uppercase regular" lang="en">Contact</h1></a>
         </li>
+
+        <!--
         <li in:fly={{ y: 1, delay: 30, duration: 2000, easing: quadInOut }}
             out:fly={{ duration: 800, easing: quadInOut }}>
             <a href="/career"><h1 class="uppercase regular" lang="en">Career</h1></a>
         </li>
+        -->
         
         <div in:fly={{ y: 1, delay: 40, duration: 2000, easing: quadInOut }}
              out:fly={{ duration: 800, easing: quadInOut }}>

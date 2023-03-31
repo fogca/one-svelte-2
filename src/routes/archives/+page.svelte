@@ -135,20 +135,19 @@
 @media screen and (max-width: 480px) {
 
   .masonry {
-    width: 92vw;
-    margin-left: calc((8vw / 2) - 5vw );
+    width: 100%;
+    margin-left: 0;
   }
   
   .masonry-column {
     width: 33.3%;
-    margin-left: .75rem;
+    margin-left: .5rem;
   }
   .masonry-column:nth-of-type(1) {margin-left: 0;}
   .masonry-column:nth-of-type(4),
   .masonry-column:nth-of-type(5) {display: none;}
   .masonry-item {
     width: 100%;
-    margin-bottom: .5rem;
   }
   .masonry-item img {margin-bottom: 0;}
   
@@ -196,7 +195,7 @@
 
 @media screen and (max-width: 480px) {
 
-  #ar1 {padding: 20vh 5vw 0;}
+  #ar1 {padding: 20vh var(--padding) 0;}
 }
 
 

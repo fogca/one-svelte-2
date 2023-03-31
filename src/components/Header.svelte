@@ -59,11 +59,13 @@
         </Saos>
       </li>
 
+      <!--
       <li>
         <Saos animation={"header-link 1.5s .45s cubic-bezier(0.3, 0, 0.7, 1) both"} once={true}>
           <a href="/career" class="uppercase regular" class:link-active={currentRoute === "/career"}>Career</a>
         </Saos>
       </li>
+      -->
     </ul>
     <a href="/">
       <Logo />

@@ -2,6 +2,14 @@
   import Saos from "saos";
   import O from '../../components/O.svelte'
 	
+  import { onMount } from 'svelte';
+
+  onMount(async () => {
+    window.setTimeout(function(){
+      //FONTPLUS.start();
+      FONTPLUS.reload(false)
+    }, 100);
+  });
 
   	/** @type {import('./$types').PageData} */
 	export let data;

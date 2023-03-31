@@ -81,6 +81,20 @@ footer .O {
     transform: translate(-50%,-50%);
 }
 
+header.is-top {
+    padding-top: 4.5rem !important;
+    background: transparent !important;
+}
+
+header .hamburger {display: none !important;}
+header .logo {
+    width: 6rem;
+    height: 2.7rem;
+    transform: translateY(3px);
+}
+header .logo svg {width: 100%;}
+
+
 @media screen and (max-width: 480px) {
     
     h1.uppercase {margin-left: -1.2px;}
@@ -111,13 +125,6 @@ footer .O {
         left: 50vw;
     }
 }
-
-header.is-top {
-    padding-top: 6rem !important;
-    background: transparent !important;
-}
-
-header .hamburger {display: none !important;}
 
 @media screen and (max-width: 480px) {    
     header.is-top {padding-top: 4.5rem !important;}
