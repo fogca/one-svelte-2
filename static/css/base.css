@@ -63,7 +63,7 @@ div, h1, h2, h3, h4, h5, h6, p, a, span, button {
     font-style: normal;
     color: var(--textColor);
     letter-spacing: .5px;
-    letter-spacing: .01em;
+    letter-spacing: .0025em;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     font-display: fallback;
@@ -105,8 +105,6 @@ h5, .h5 {font-size: 1.8rem;}
 h6, .h6 {font-size: 1.4rem;}
 
 p, .p {
-    font-family: "TTNormsSerif", TsukuGoPr5-M, TsukuGoPro-M, sans-serif;
-    color: var(--bodyColor);
     line-height: 1.9;
     font-size: 1.5rem;
     text-align: left;
