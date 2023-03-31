@@ -16,8 +16,9 @@
   <link rel="stylesheet" href="../css/main.css?var=1.13">
   <link rel="stylesheet" href="../css/prerendering.css?var=1.13">
   <link rel="stylesheet" href="https://use.typekit.net/frp6udl.css">
-  <script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?kqbwQX--jVA%3D&box=Bgw26CBfLFk%3D&aa=1&ab=2"></script>
+  <script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?A2b35yD5mnk%3D&box=qnyUbRZ0KZQ%3D&aa=1&ab=2"></script><!--one fontplus-->>
   <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+  <!--
   <script>
     (function(d) {
       var config = {
@@ -28,6 +29,7 @@
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
   </script>
+  -->
 </svelte:head>
 
 <div 

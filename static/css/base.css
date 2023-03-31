@@ -33,6 +33,9 @@
     letter-spacing: 0em;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: "TTNormsSerif", sans-serif;
+    font-weight: 300;
+    font-variation-settings: "wght" 300;
 }
 
 
@@ -55,8 +58,8 @@ main {
 div, h1, h2, h3, h4, h5, h6, p, a, span, button {
     font-family: "TTNormsS-R",TsukuGoPr5-M,TsukuGoPro-M, sans-serif;
     font-family: "TTNormsSerif",TsukuGoPr5-M,TsukuGoPro-M, sans-serif;
-    font-weight: 400;
-    font-variation-settings: "wght" 350;
+    font-weight: 350;
+    font-variation-settings: "wght" 300;
     font-style: normal;
     color: var(--textColor);
     letter-spacing: .5px;
