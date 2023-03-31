@@ -129,7 +129,7 @@
   width: 100%;
 }
 .masonry-item img {
-  margin-bottom: .75rem;
+  margin-bottom: .5rem;
 }
 
 @media screen and (max-width: 480px) {
