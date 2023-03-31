@@ -1,5 +1,24 @@
 h1.uppercase {margin-left: -2px;}
 
+
+
+
+#i1 h1 h1 {
+    line-height: 1.4;
+    font-size: 3.2rem;
+    margin-left: -2.2px;
+    /*animation: fadeInAnime 15s ease-in-out infinite;*/
+}
+@keyframes fadeInAnime{
+    0% {font-variation-settings: "wght" 250;}
+    50% {font-variation-settings: "wght" 300;}
+    100% {font-variation-settings: "wght" 250;}
+}
+
+
+
+
+
 .Career {background-color: var(--darkGray);}
 .Career header {background: var(--darkGray) !important;}
 .Career header * {

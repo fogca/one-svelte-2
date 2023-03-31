@@ -59,20 +59,18 @@ div, h1, h2, h3, h4, h5, h6, p, a, span, button {
     font-display: fallback;
 }
 
-main {
-    /*
-    max-width: 1620px;
-    margin: auto;
-    */
-}
 
 
 
+
+
+/*
 .Index section:first-of-type,
 .Studio section:first-of-type,
 .Contact section:first-of-type,
 .Archives section:first-of-type,
-.Career section:first-of-type {padding-top: 25vh;}
+.Career section:first-of-type*/
+#ar1, #st1, #career1, #c1 {padding-top: 25vh;}
 
 
 

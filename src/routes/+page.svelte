@@ -50,13 +50,13 @@
 		<div class="wrapper">
 			
 			{#each data[0].contents as content}                   
-      <Saos animation={"scroll-animation 1.5s .45s cubic-bezier(0.3, 0, 0.7, 1) both"} once={true}>
 		  	<a href="/archives/{content.id}/" class="container">
+          <Saos animation={"scroll-animation 1.5s .45s cubic-bezier(0.3, 0, 0.7, 1) both"} once={true}>
 				  <img src={content.thumbnail.url} alt="{content.title}"><!--<img src="`${content.thumbnail.url}?fm=webp`" alt="{content.title}">-->
 				  <h2 class="h4">{ content.title }</h2>
 				  <h4 class="h6">{ content.scope }</h4>
+        </Saos>              
 		  	</a>
-      </Saos>              
 			{/each}
 		</div>
 		{/if}
@@ -97,6 +97,7 @@
 #i1 {
   width: 100%;
   min-height: 100vh;
+  min-height: 100dvh;
   padding-left: -10vw;
   
   display: flex;
@@ -108,14 +109,12 @@
   margin-bottom: 2rem;
 }
 
-#i1 .top {margin-top: 25vh;}
-#i1 h1 {
-  line-height: 1.4;
-  font-size: 3.2rem;
-  margin-left: -2.2px;
+#i1 .top {
+  margin-top: 28.5vh;
 }
 
-#i1 .wrapper {width: 40%;}
+
+#i1 .wrapper {width: 62.5%;}
 
 #i1 .wrapper h2.p {
   width: 100%;
@@ -194,6 +193,7 @@
 #i3 h1 {margin-bottom: 3rem;}
 #i3 h3 {margin: calc(var(--pX) * 1.5) 0 calc(var(--pX) * 5);}
 #i3 .wrapper {margin-right: 12.5vw;}
+#i3 .wrapper p.h5 {font-size: 1.6rem;}
 #i3 .container h2 {margin-top:calc(var(--pX) * 5);}
 #i3 .container a {margin-top: 3rem;}
 
