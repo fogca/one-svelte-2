@@ -31,6 +31,7 @@
 
 <header class="is-top">
     
+  <Saos animation={"header-link 1.5s cubic-bezier(0.3, 0, 0.7, 1) both"} once={true}>
     <div class="button menu-button sp" 
       class:clicked={clicked} 
       on:click="{() => clicked = !clicked}"
@@ -38,6 +39,7 @@
     >
       <div class="h3 uppercase"></div>
     </div>
+  </Saos>
 
     <ul class="pc">
 
@@ -67,9 +69,11 @@
       </li>
       -->
     </ul>
+    <Saos animation={"header-link 1.5s cubic-bezier(0.3, 0, 0.7, 1) both"} once={true}>
     <a href="/">
       <Logo />
     </a>
+    </Saos>
     
     {#if isExpanded}
     <Menu />

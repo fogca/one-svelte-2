@@ -2,6 +2,8 @@
   import Saos from "saos";
 	import O from '../components/O.svelte';
 	import Arrow from '../components/Arrow.svelte';
+  import { fade, fly } from 'svelte/transition';
+  import { quadInOut } from 'svelte/easing';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -14,6 +16,7 @@
 
 <main>
 
+  <Saos animation={"scroll-animation 3.0s cubic-bezier(0.3, 0, 0.7, 1) both"} once={true}>
 	<section id="i1">
 		<O />
     
@@ -37,6 +40,7 @@
     </div>
     
 	</section>
+  </Saos>
 
 	<section id="i2">
 		<h1 class="uppercase" lang="en">Highlights</h1>
