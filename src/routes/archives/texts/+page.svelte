@@ -14,21 +14,21 @@
 <main>
 
   <section id="tx1">
-    <h1 class="uppercase">Archives</h1>
+    <h1 class="uppercase" lang="en">Archives</h1>
     <div class="Archvieswitch">
-      <a href="/archives">Gallery</a>
-      <a href="/archives/texts" style="opacity:1;">List</a>
+      <a href="/archives" lang="en">Gallery</a>
+      <a href="/archives/texts" style="opacity:1;" lang="en">List</a>
     </div>
     <div class="wrapper">
 
       {#if data[0].contents}                                 
       {#each data[0].contents as content}                                 
-      <a href="/archives/{content.id}/" data-sal="fade" style="--sal-duration: 2s;">
+      <a href="/archives/{content.id}/" lang="en">
         <hr>
         <div class="container">
-          <time class="time">{content.year}</time>
-          <h2 class="h4">{ content.title }</h2>
-          <h3 class="h5">{ content.scope }</h3>
+          <time class="time" lang="en">{content.year}</time>
+          <h2 class="h4" lang="en">{ content.title }</h2>
+          <h3 class="h5" lang="en">{ content.scope }</h3>
           <!--<Arrow />-->
         </div> 
       </a>

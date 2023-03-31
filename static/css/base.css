@@ -29,6 +29,12 @@
     --pX: 8px;
 }
 
+:lang(en) {
+    letter-spacing: 0em;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
 
 * {
 	margin: 0;
@@ -54,6 +60,7 @@ div, h1, h2, h3, h4, h5, h6, p, a, span, button {
     font-style: normal;
     color: var(--textColor);
     letter-spacing: .5px;
+    letter-spacing: .01em;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     font-display: fallback;
@@ -100,7 +107,6 @@ p, .p {
     line-height: 1.9;
     font-size: 1.5rem;
     text-align: left;
-    letter-spacing: .005em;
 }
 .uppercase {text-transform: capitalize;}
 .semitrans {opacity: 0.5;}

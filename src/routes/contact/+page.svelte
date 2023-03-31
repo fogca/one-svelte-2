@@ -11,16 +11,16 @@
 <main>
   <section id="c1">
     <div>
-      <h1 class="uppercase">Contact</h1>
+      <h1 class="uppercase" lang="en">Contact</h1>
       
-      <h4 class="h6 semitrans uppercase">Email</h4>
+      <h4 class="h6 semitrans uppercase" lang="en">Email</h4>
       <a href="mailto:info@one.tokyo.jp">
-        <h3 class="h4">info&#64;one.tokyo.jp</h3>
+        <h3 class="h4" lang="en">info&#64;one.tokyo.jp</h3>
       </a>
       
 
-      <h4 class="h6 semitrans uppercase">Address</h4>
-      <h3 class="h4">1F JP Noie Ebisunishi, 1-33-6 Ebisunishi <br>Shibuya, Tokyo 150-0021</h3>
+      <h4 class="h6 semitrans uppercase" lang="en">Address</h4>
+      <h3 class="h4" lang="en">1F JP Noie Ebisunishi, 1-33-6 Ebisunishi <br>Shibuya, Tokyo 150-0021</h3>
     </div>
   </section>
 </main>

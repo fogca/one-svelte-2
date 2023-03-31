@@ -1,9 +1,6 @@
 #s1 p.body p {
     width: 80%;
-    font-size: 1.8rem;
-    /*
-    -webkit-text-stroke: .0725px;
-    */
+    font-size: 1.6rem;
 }
 #s1 img.fullImage {
     width: 100vw;

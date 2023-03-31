@@ -20,8 +20,8 @@
 
 	<section id="s1">
 		
-		<h1 class="h2">{data[0].title}</h1>
-		<h2 class="h5 semitrans">{ data[0].scope }</h2>
+		<h1 class="h2" lang="en">{data[0].title}</h1>
+		<h2 class="h5 semitrans" lang="en">{ data[0].scope }</h2>
 		<p class="h5 body">{@html data[0].body}</p>
 		<img src={data[0].thumbnail.url} class="thumbnail" alt="{data[0].title}">
 		
@@ -66,7 +66,7 @@
 		<img src={data[0].fullImageB.url} class="fullImage" alt="{data[0].title}">
 		{/if}
 		
-		<h6 class="h4 credit">{@html data[0].credit}</h6>
+		<h6 class="h4 credit" lang="en">{@html data[0].credit}</h6>
 		
 		{#if data[0].link} 
 		<a href="{data[0].link}" target="_blank" class="h5 link" lang="en">Official Site</a>​
@@ -136,10 +136,13 @@
 }
 
 #s1 h1 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     margin: 0 0 .5rem;
 }
-#s1 h2 {margin: 0 0 1.5rem;}
+#s1 h2 {
+	font-size: 1.4rem;
+	margin: 0.5rem 0 4rem;
+}
 
 
 	

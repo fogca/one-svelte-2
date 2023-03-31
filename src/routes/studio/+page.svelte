@@ -14,7 +14,7 @@
     <main class="Studio">
       <O />
       <section id="st1">
-        <h1 class="uppercase">Studio</h1>
+        <h1 class="uppercase" lang="en">Studio</h1>
         
         <div class="wrapper">
           <h3 class="p studio-jp">
@@ -47,7 +47,10 @@
 
 #st2 {margin-top: calc(var(--pX) * 20);}
 
-#st1 .wrapper {width: 50%;}
+#st1 .wrapper {
+  width: 50%;
+  margin-top: 2rem;
+}
 
 #st1 h3 {margin-bottom: 2rem;}
 #st1 h4 {line-height: 1.8;}

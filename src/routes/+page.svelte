@@ -18,24 +18,20 @@
 		<O />
     
     <div class="top">
-      <h1 class="tagline">{@html data[1].top_tagline }</h1>
+      <h1 class="tagline" lang="en">{@html data[1].top_tagline }</h1>
 		  <div class="wrapper">
 		    <h2 class="p">{ @html data[1].top_jap }</h2>
-		    <h3 class="h5 p">{ @html data[1].top_eng }</h3>
+		    <h3 class="h5 p" lang="en">{ @html data[1].top_eng }</h3>
 		  </div>
     </div>
 
     <div class="links">
       <a href="/studio">
-        <h4 class="uppercase">About our studio
-        <span><Arrow /></span>
-        </h4>
+        <h4 class="uppercase" lang="en">About our studio <span><Arrow /></span></h4>
         <h5 class="h6">oneについて</h5>
       </a>
       <a href="/contact">
-        <h4 class="uppercase">Contact
-        <span><Arrow /></span>
-        </h4>
+        <h4 class="uppercase" lang="en">Contact <span><Arrow /></span></h4>
         <h5 class="h6">お問い合わせ</h5>
       </a>
     </div>
@@ -43,7 +39,7 @@
 	</section>
 
 	<section id="i2">
-		<h1 class="uppercase">Highlights</h1>
+		<h1 class="uppercase" lang="en">Highlights</h1>
 		<h3 class="h5" style="display:none;">プロジェクト</h3>
 
 		{#if data[0].contents}
@@ -53,8 +49,8 @@
 		  	<a href="/archives/{content.id}/" class="container">
           <Saos animation={"scroll-animation 1.5s .45s cubic-bezier(0.3, 0, 0.7, 1) both"} once={true}>
 				  <img src={content.thumbnail.url} alt="{content.title}"><!--<img src="`${content.thumbnail.url}?fm=webp`" alt="{content.title}">-->
-				  <h2 class="h4">{ content.title }</h2>
-				  <h4 class="h6">{ content.scope }</h4>
+				  <h2 class="h4" lang="en">{ content.title }</h2>
+				  <h3 class="h6" lang="en">{ content.scope }</h3>
         </Saos>              
 		  	</a>
 			{/each}
@@ -66,19 +62,19 @@
 	<section id="i3">
 	
 		<div class="wrapper">
-		  <h1 class="uppercase">{ data[1].philosophy_title_eng }</h1>
+		  <h1 class="uppercase" lang="en">{ data[1].philosophy_title_eng }</h1>
 		  <p class="h5">{ data[1].philosophy }</p>
 		</div>
 		<div class="container">
 		  <a href="/studio">
-			<h4 class="uppercase">About our studio
+			<h4 class="uppercase" lang="en">About our studio
 			  <span><Arrow /></span>
 			</h4>
 			<h5 class="h6">oneについて</h5>
 		  </a>
   
 		  <a href="/contact">
-			<h4 class="uppercase">Contact
+			<h4 class="uppercase" lang="en">Contact 
 			  <span><Arrow /></span>
 			</h4>
 			
@@ -174,9 +170,13 @@
 #i2 .wrapper a:nth-of-type(4),
 #i2 .wrapper a:nth-of-type(7) {width: 42.5vw;}
 #i2 .wrapper h2 {
-  font-size: 2.6rem;
-  margin-top: calc(var(--pX) * 1.5);}
-#i2 .wrapper h4 {margin-top: calc(var(--pX) * .5);}
+  font-size: 2.0rem;
+  margin-top: 1.5rem;
+}
+#i2 .wrapper h3 {
+  margin-top: .25rem;
+  font-size: 1.3rem;
+}
 
 #i3 {
   background-color: var(--darkGray);
@@ -191,7 +191,7 @@
 #i3 .wrapper {width: 52.5%;}
 #i3 * {color: white;}
 #i3 h1 {margin-bottom: 3rem;}
-#i3 h3 {margin: calc(var(--pX) * 1.5) 0 calc(var(--pX) * 5);}
+
 #i3 .wrapper {margin-right: 12.5vw;}
 #i3 .wrapper p.h5 {font-size: 1.6rem;}
 #i3 .container h2 {margin-top:calc(var(--pX) * 5);}
@@ -209,7 +209,7 @@
     font-size: 2.8rem;
     font-size: 2.4rem;
     line-height: 1.6;
-    padding-top: 13.5rem;
+    padding-top: 0;
   }
   #i1 h1.uppercase {text-transform: initial;}
   #i1 .wrapper {width: 95%;}
@@ -261,7 +261,7 @@
 #i2 .wrapper a:nth-of-type(6) img {aspect-ratio: 5/6;}
 
 #i2 .wrapper a img {max-height: 65vh;}
-#i2 .wrapper a h2 {font-size: 2.2rem;
+#i2 .wrapper a h2 {font-size: 1.8rem;
 margin-top: calc(var(--pX) * 1.5);}
 
 #i2 .wrapper a h4 {
