@@ -31,15 +31,19 @@
 
 <header class="is-top">
     
-  <Saos animation={"header-link 1.5s cubic-bezier(0.3, 0, 0.7, 1) both"} once={true}>
+  
     <div class="button menu-button sp" 
       class:clicked={clicked} 
       on:click="{() => clicked = !clicked}"
       on:click|preventDefault={clickHandler}
     >
+
+    <Saos animation={"header-link 1.5s cubic-bezier(0.3, 0, 0.7, 1) both"} once={true}>
       <div class="h3 uppercase"></div>
-    </div>
-  </Saos>
+    </Saos>
+    
+  </div>
+  
 
     <ul class="pc">
 
@@ -85,9 +89,11 @@
 
 @keyframes -global-header-link {0% {transform: translateX(.25rem);opacity: 0;}100% {transform: translateX(0);opacity: 1;}}
 
-.menu-button .h3 {
+.menu-button {
   position: relative;
   z-index: 999;
+}
+.menu-button .h3 {
   transition: 1.5s cubic-bezier(.8, 0, 0, .8);
 }
 .menu-button .h3::after {
