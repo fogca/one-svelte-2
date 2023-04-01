@@ -42,7 +42,13 @@
       {#if data[0].contents}    
       {#each data[0].contents as content}                                 
       <a href="/archives/{content.id}/" class="masonry-item masonry-1">
+        <picture>
+          <source srcset="{`${content.thumbnail.url}?fm=avif&q=30&width=580`} 1x, {`${content.thumbnail.url}?fm=avif&q=50&width=720`} 2x," media="(max-width: 599px)" type="image/avif">
+          <source srcset="{`${content.thumbnail.url}?fm=avif&q=30&width=580`} 1x, {`${content.thumbnail.url}?fm=avif&q=50&width=1440`} 2x," media="(min-width: 600px)" type="image/avif">
+          <source srcset="{`${content.thumbnail.url}?fm=webp&q=30&width=580`} 1x, {`${content.thumbnail.url}?fm=webp&q=50&width=720`} 2x," media="(max-width: 599px)" type="image/webp">
+          <source srcset="{`${content.thumbnail.url}?fm=webp&q=30&width=580`} 1x, {`${content.thumbnail.url}?fm=webp&q=50&width=1440`} 2x," media="(min-width: 600px)" type="image/webp">
           <img src={content.thumbnail.url} alt="{content.title}">
+        </picture>
       </a>
       {/each}
       {/if}
@@ -50,19 +56,56 @@
       {#each data[0].contents as content}                              
       {#if content.fullImageB}   
       <a href="/archives/{content.id}/" class="masonry-item masonry-1">
+        <picture>
+          <source srcset="{`${content.fullImage.url}?fm=avif&q=30&width=580`} 1x, {`${content.fullImage.url}?fm=avif&q=50&width=720`} 2x," media="(max-width: 599px)" type="image/avif">
+          <source srcset="{`${content.fullImage.url}?fm=avif&q=30&width=580`} 1x, {`${content.fullImage.url}?fm=avif&q=50&width=1440`} 2x," media="(min-width: 600px)" type="image/avif">
+          <source srcset="{`${content.fullImage.url}?fm=webp&q=30&width=580`} 1x, {`${content.fullImage.url}?fm=webp&q=50&width=720`} 2x," media="(max-width: 599px)" type="image/webp">
+          <source srcset="{`${content.fullImage.url}?fm=webp&q=30&width=580`} 1x, {`${content.fullImage.url}?fm=webp&q=50&width=1440`} 2x," media="(min-width: 600px)" type="image/webp">
           <img src={content.fullImage.url} alt="{content.title}">
+        </picture>
       </a>
       {/if}
       {/each}
 
-      {#each data[0].contents as content}     
+      {#each data[0].contents as content}
       {#if content.fullImageB}                            
       <a href="/archives/{content.id}/" class="masonry-item masonry-1">
+        <picture>
+          <source srcset="{`${content.fullImageB.url}?fm=avif&q=30&width=580`} 1x, {`${content.fullImageB.url}?fm=avif&q=50&width=720`} 2x," media="(max-width: 599px)" type="image/avif">
+          <source srcset="{`${content.fullImageB.url}?fm=avif&q=30&width=580`} 1x, {`${content.fullImageB.url}?fm=avif&q=50&width=1440`} 2x," media="(min-width: 600px)" type="image/avif">
+          <source srcset="{`${content.fullImageB.url}?fm=webp&q=30&width=580`} 1x, {`${content.fullImageB.url}?fm=webp&q=50&width=720`} 2x," media="(max-width: 599px)" type="image/webp">
+          <source srcset="{`${content.fullImageB.url}?fm=webp&q=30&width=580`} 1x, {`${content.fullImageB.url}?fm=webp&q=50&width=1440`} 2x," media="(min-width: 600px)" type="image/webp">
           <img src={content.fullImageB.url} alt="{content.title}">
+        </picture>
       </a>
       {/if}
       {/each}
+
+
+
+
+
+
       
+	    {#each data[0].contents as content}
+      <a href="/archives/{content.id}/" class="masonry-item masonry-1 repeat">
+        {#each content.repeatImg as repeat}
+        <picture>
+            <source srcset="{`${repeat.images.url}?fm=avif&q=30&width=580`} 1x, {`${repeat.images.url}?fm=avif&q=50&width=720`} 2x," media="(max-width: 599px)" type="image/avif">
+            <source srcset="{`${repeat.images.url}?fm=avif&q=30&width=580`} 1x, {`${repeat.images.url}?fm=avif&q=50&width=1440`} 2x," media="(min-width: 600px)" type="image/avif">
+            <source srcset="{`${repeat.images.url}?fm=webp&q=30&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=50&width=720`} 2x," media="(max-width: 599px)" type="image/webp">
+            <source srcset="{`${repeat.images.url}?fm=webp&q=30&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=50&width=1440`} 2x," media="(min-width: 600px)" type="image/webp">
+            <img src="{repeat.images.url}" alt="{content.title}">
+        </picture>
+        {/each}
+	    </a>
+      {/each}
+      
+
+
+
+
+      <!--
       {#each data[0].contents as content}    
       {#if content.images}                             
       <a href="/archives/{content.id}/" class="masonry-item masonry-2">
@@ -95,6 +138,8 @@
       {/if}
       {/each}
 
+    -->
+
     </div>
 
   </section>
@@ -104,6 +149,12 @@
 
 
 <style>
+
+.repeat picture {display: none;}
+.repeat picture:nth-of-type(1) {display: block;}
+
+
+
 #ar1 {
   padding-bottom: 15vh;
   width: calc(100vw - var(--padding)*1);
@@ -168,11 +219,11 @@
   height: 100%;
 }
 
-
+/*
 #ar1 .masonry-item:nth-of-type(8) img,
 #ar1 .masonry-item:nth-of-type(15) img,
 #ar1 .masonry-item:nth-of-type(30) img {aspect-ratio: 3/5;}
-
+*/
 
 #ar1 .container1 .images p img {display: none;}
 #ar1 .container1 .images p img:nth-of-type(1) {display: block;}
@@ -207,9 +258,16 @@
   #ar1 {width: 80vw}
 }
 
-@media screen and (min-width: 1640px) {#ar1 {width: calc(1640px * .8);}}
-@media screen and (min-width: 1920px) {#ar1 {width: calc(1920px * .8);}}
-@media screen and (min-width: 2140px) {#ar1 {width: calc(2140px * .8);}}
-@media screen and (min-width: 2560px) {#ar1 {width: calc(2560px * .8);}}
+@media screen and (min-width: 1640px) {
+
+
+  
+  #ar1 {
+    width: 100%;
+    padding-right: var(--padding);
+  }
+
+
+}
 
 </style>

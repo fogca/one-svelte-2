@@ -19,7 +19,10 @@ type Post = {
 	content: string;
 	scope: string;
 	title: string;
-	images: InnerHTML;
+	repeatImg: HTMLElement;
+	repeatImg2: HTMLElement;
+	images: {url: string;}
+	image: {url: string;}
 	images2: InnerHTML;
 
 	philosophy: string;
