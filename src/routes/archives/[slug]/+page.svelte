@@ -138,7 +138,7 @@
 
 <style>
 
-	.repeat {width: 60%;}
+	.repeat {width: 100%;}
 
 #s1 {
     width: 90%;
