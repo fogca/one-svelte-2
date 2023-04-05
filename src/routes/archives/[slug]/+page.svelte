@@ -49,8 +49,10 @@
 		{/each}
         {/if}
 
+		{#if data[0].image}
 		<div class="images">{@html data[0].image}</div>
-		
+		{/if}
+
 		{#if data[0].fullImage} 
 		<img src={data[0].fullImage.url} class="fullImage" alt="{data[0].title}">
 		{/if}
@@ -67,8 +69,10 @@
 		{/each}
         {/if}
 		
+		{#if data[0].imagesB}
 		<div class="images">{@html data[0].imagesB}</div>
-		
+		{/if}
+
 		{#if data[0].embed} 
 		<div class="embed">{@html data[0].embed}</div>
 		{/if}
