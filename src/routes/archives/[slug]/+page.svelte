@@ -34,16 +34,23 @@
 		<h1 class="h2" lang="en">{data[0].title}</h1>
 		<h2 class="h5 semitrans" lang="en">{ data[0].scope }</h2>
 		<p class="h5 body">{@html data[0].body}</p>
-		<img src={data[0].thumbnail.url} class="thumbnail" alt="{data[0].title}">
+
+		<picture>
+            <source srcset="{`${data[0].thumbnail.url}?fm=avif&q=60&width=580`} 1x, {`${data[0].thumbnail.url}?fm=avif&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/avif">
+            <source srcset="{`${data[0].thumbnail.url}?fm=avif&q=60&width=580`} 1x, {`${data[0].thumbnail.url}?fm=avif&q=80&width=1920`} 2x," media="(min-width: 600px)" type="image/avif">
+            <source srcset="{`${data[0].thumbnail.url}?fm=webp&q=60&width=580`} 1x, {`${data[0].thumbnail.url}?fm=webp&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/webp">
+            <source srcset="{`${data[0].thumbnail.url}?fm=webp&q=60&width=580`} 1x, {`${data[0].thumbnail.url}?fm=webp&q=80&width=1920`} 2x," media="(min-width: 600px)" type="image/webp">
+            <img src={data[0].thumbnail.url} alt="{data[0].title}" class="thumbnail">
+        </picture>
 		
 		
 		{#if data[0].repeatImg}
 		{#each data[0].repeatImg as repeat}
         <picture>
             <source srcset="{`${repeat.images.url}?fm=avif&q=60&width=580`} 1x, {`${repeat.images.url}?fm=avif&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/avif">
-            <source srcset="{`${repeat.images.url}?fm=avif&q=60&width=580`} 1x, {`${repeat.images.url}?fm=avif&q=75&width=1440`} 2x," media="(min-width: 600px)" type="image/avif">
+            <source srcset="{`${repeat.images.url}?fm=avif&q=60&width=580`} 1x, {`${repeat.images.url}?fm=avif&q=80&width=2440`} 2x," media="(min-width: 600px)" type="image/avif">
             <source srcset="{`${repeat.images.url}?fm=webp&q=60&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/webp">
-            <source srcset="{`${repeat.images.url}?fm=webp&q=60&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=75&width=1440`} 2x," media="(min-width: 600px)" type="image/webp">
+            <source srcset="{`${repeat.images.url}?fm=webp&q=60&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=80&width=2440`} 2x," media="(min-width: 600px)" type="image/webp">
             <img src={repeat.images.url} alt="{data[0].title}" class="repeat">
         </picture>
 		{/each}
@@ -54,16 +61,22 @@
 		{/if}
 
 		{#if data[0].fullImage} 
-		<img src={data[0].fullImage.url} class="fullImage" alt="{data[0].title}">
+		<picture>
+            <source srcset="{`${data[0].fullImage.url}?fm=avif&q=60&width=580`} 1x, {`${data[0].fullImage.url}?fm=avif&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/avif">
+            <source srcset="{`${data[0].fullImage.url}?fm=avif&q=60&width=580`} 1x, {`${data[0].fullImage.url}?fm=avif&q=80&width=2880`} 2x," media="(min-width: 600px)" type="image/avif">
+            <source srcset="{`${data[0].fullImage.url}?fm=webp&q=60&width=580`} 1x, {`${data[0].fullImage.url}?fm=webp&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/webp">
+            <source srcset="{`${data[0].fullImage.url}?fm=webp&q=60&width=580`} 1x, {`${data[0].fullImage.url}?fm=webp&q=80&width=2880`} 2x," media="(min-width: 600px)" type="image/webp">
+			<img src={data[0].fullImage.url} class="fullImage" alt="{data[0].title}">
+        </picture>
 		{/if}
 
 		{#if data[0].repeatImg2}
 		{#each data[0].repeatImg2 as repeat}
         <picture>
             <source srcset="{`${repeat.images.url}?fm=avif&q=60&width=580`} 1x, {`${repeat.images.url}?fm=avif&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/avif">
-            <source srcset="{`${repeat.images.url}?fm=avif&q=60&width=580`} 1x, {`${repeat.images.url}?fm=avif&q=75&width=1440`} 2x," media="(min-width: 600px)" type="image/avif">
+            <source srcset="{`${repeat.images.url}?fm=avif&q=60&width=580`} 1x, {`${repeat.images.url}?fm=avif&q=800&width=2440`} 2x," media="(min-width: 600px)" type="image/avif">
             <source srcset="{`${repeat.images.url}?fm=webp&q=60&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/webp">
-            <source srcset="{`${repeat.images.url}?fm=webp&q=60&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=75&width=1440`} 2x," media="(min-width: 600px)" type="image/webp">
+            <source srcset="{`${repeat.images.url}?fm=webp&q=60&width=580`} 1x, {`${repeat.images.url}?fm=webp&q=80&width=2440`} 2x," media="(min-width: 600px)" type="image/webp">
             <img src={repeat.images.url} alt="{data[0].title}" class="repeat">
         </picture>
 		{/each}
@@ -78,7 +91,13 @@
 		{/if}
 
 		{#if data[0].fullImageB} 
-		<img src={data[0].fullImageB.url} class="fullImage" alt="{data[0].title}">
+		<picture>
+            <source srcset="{`${data[0].fullImageB.url}?fm=avif&q=60&width=580`} 1x, {`${data[0].fullImageB.url}?fm=avif&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/avif">
+            <source srcset="{`${data[0].fullImageB.url}?fm=avif&q=60&width=580`} 1x, {`${data[0].fullImageB.url}?fm=avif&q=80&width=2880`} 2x," media="(min-width: 600px)" type="image/avif">
+            <source srcset="{`${data[0].fullImageB.url}?fm=webp&q=60&width=580`} 1x, {`${data[0].fullImageB.url}?fm=webp&q=75&width=720`} 2x," media="(max-width: 599px)" type="image/webp">
+            <source srcset="{`${data[0].fullImageB.url}?fm=webp&q=60&width=580`} 1x, {`${data[0].fullImageB.url}?fm=webp&q=80&width=2880`} 2x," media="(min-width: 600px)" type="image/webp">
+			<img src={data[0].fullImage.url} class="fullImage" alt="{data[0].title}">
+        </picture>
 		{/if}
 		
 		<h6 class="h4 credit" lang="en">{@html data[0].credit}</h6>
@@ -145,7 +164,8 @@
 	.repeat {width: 100%;}
 
 #s1 {
-    width: 90%;
+	width: 100%;
+	padding-right: var(--padding);
     padding-top: calc(var(--pX) * 30);
     padding-top: 25vh;
 }
