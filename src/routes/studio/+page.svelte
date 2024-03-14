@@ -41,8 +41,8 @@
         <h3 class="h6 semitrans">Founder / Creative director</h3>
         <h4 class="h4">Kazuki Kaneko</h4>
 
-        <h3 class="h6 semitrans">Address</h3>
-        <h4 class="h4">1F JP Noie Ebisunishi, 1-33-6 Ebisunishi <br class="pc">Shibuya, Tokyo 150-0021</h4>
+        <h3 class="h6 semitrans" style="display: none;">Address</h3>
+        <h4 class="h4" style="display: none;">1F JP Noie Ebisunishi, 1-33-6 Ebisunishi <br class="pc">Shibuya, Tokyo 150-0021</h4>
 
         <h3 class="h6 semitrans">Contact</h3>
         <h4 class="h4">info@one.tokyo.jp</h4>

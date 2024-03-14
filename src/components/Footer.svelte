@@ -10,7 +10,7 @@
 
 <footer data-sal="fade" style="--sal-duration: 2s;">
     <div class="wrapper">
-        <div>
+        <div style="display: none;">
             <h1 class="h4">one inc.</h1>
             <h2 class="h5">1F JP Noie Ebisunishi, 1-33-6 <br>Ebisunishi Shibuya, Tokyo 150-0021</h2>
         </div>
@@ -22,7 +22,7 @@
         </div>
     </div>
     
-    <div class="wrapper">
+    <div class="container">
         <h3><Logo /></h3>
         <h4 class="h6 semitrans">©︎ 2022 one inc.</h4>
     </div>
@@ -46,6 +46,7 @@ footer {
 footer h2 {
     margin-top: calc(var(--pX) * 1.5);
     margin-bottom: calc(var(--pX) * 10);
+    margin-bottom: 0;
 }
 
 footer div:nth-of-type(1) div {margin-right: calc(var(--pX) * 15);}
@@ -58,6 +59,8 @@ footer .wrapper h4 {
     padding-bottom: 1.25rem;
     margin-left: calc(var(--pX) * 5);
 }
+
+footer .container {margin-top: 6rem;}
 
 @media screen and (max-width: 480px) {
     footer {

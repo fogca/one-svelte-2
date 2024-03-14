@@ -32,7 +32,6 @@ import { expoInOut, expoOut, quadInOut, sineInOut } from 'svelte/easing';
         <div in:fly={{ y: 1, delay: 40, duration: 2000, easing: quadInOut }}
              out:fly={{ duration: 800, easing: quadInOut }}>
             <h5 class="semitrans">Find us on</h5>
-            <a href="https://www.instagram.com/one.inc.tokyo/"><h3 class="uppercase regular" lang="en">Behance</h3></a>
             <a href="https://www.instagram.com/one.inc.tokyo/"><h3 class="uppercase regular" lang="en">Instagram</h3></a>
         </div>
 
@@ -41,7 +40,7 @@ import { expoInOut, expoOut, quadInOut, sineInOut } from 'svelte/easing';
     <div class="container"
         in:fly={{ y: 1, delay: 50, duration: 2000, easing: quadInOut }}
         out:fly={{ duration: 800, easing: quadInOut }}>
-        <h3 class="h5" lang="en">one inc.<br>1F JP Noie Ebisunishi, 1-33-6 <br>Ebisunishi Shibuya, Tokyo 150-0021</h3>
+        <h3 class="h5" lang="en" style="display: none;">one inc.<br>1F JP Noie Ebisunishi, 1-33-6 <br>Ebisunishi Shibuya, Tokyo 150-0021</h3>
         <h4 class="h5 semitrans" lang="en">©︎ 2022 one inc.</h4>
     </div>
 

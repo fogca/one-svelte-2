@@ -19,8 +19,8 @@
       </a>
       
 
-      <h4 class="h6 semitrans uppercase" lang="en">Address</h4>
-      <h3 class="h4" lang="en">1F JP Noie Ebisunishi, 1-33-6 Ebisunishi <br>Shibuya, Tokyo 150-0021</h3>
+      <h4 class="h6 semitrans uppercase" lang="en" style="display: none;">Address</h4>
+      <h3 class="h4" lang="en" style="display: none;">1F JP Noie Ebisunishi, 1-33-6 Ebisunishi <br>Shibuya, Tokyo 150-0021</h3>
     </div>
   </section>
 </main>
