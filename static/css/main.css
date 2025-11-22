@@ -11,6 +11,9 @@ h1.uppercase {margin-left: -2px;}
     font-variation-settings: "wght" 300;
     /*animation: fadeInAnime 15s ease-in-out infinite;*/
 }
+
+#i3 svg path {fill: white;}
+
 @keyframes fadeInAnime{
     0% {font-variation-settings: "wght" 250;}
     50% {font-variation-settings: "wght" 300;}
